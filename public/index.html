@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title id="site-title">Suggestion Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="brand">
+        <img id="logo" src="/logo.png" alt="logo" onerror="this.style.display='none'"/>
+        <div>
+          <h1 id="title">Suggestion Bot</h1>
+          <p class="tagline">Submit. Vote. Level up the game — community powered.</p>
+        </div>
+      </div>
+      <a class="cta" href="https://discord.com" target="_blank" rel="noopener">Open server</a>
+    </header>
+
+    <main class="container">
+      <section class="stats-card">
+        <h2>Live server stats</h2>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="num" id="total">—</div>
+            <div class="label">Total Suggestions</div>
+          </div>
+          <div class="stat">
+            <div class="num" id="pending">—</div>
+            <div class="label">Pending</div>
+          </div>
+          <div class="stat">
+            <div class="num" id="approved">—</div>
+            <div class="label">Approved</div>
+          </div>
+        </div>
+        <p class="muted">This site also keeps your suggestion bot online 24/7.</p>
+      </section>
+
+      <section class="features">
+        <h3>Bot features</h3>
+        <ul>
+          <li>Slash `/suggest` with automatic 👍/👎 voting.</li>
+          <li>Admin `/approve` and `/deny` with reason + embed update.</li>
+          <li>Paginated suggestion list and per-suggestion detail command.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div>• <a href="/health">Health</a> • Powered on Render</div>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
